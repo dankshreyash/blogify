@@ -11,13 +11,10 @@ function createTokenforuser(user) {
     };
     const token = JWT.sign(payload, secret)
     return token;
-
-
 }
 
-
 function ValidateToken(token) {
-    const payload = JWT.verify(token)
+    const payload = JWT.verify(token,secret)
     return payload;
 }
 
