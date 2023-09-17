@@ -3,20 +3,20 @@
 
 <head>
     <%- include('./Partials/head') %>
-    <title>Homepage</title>
+    <title></title>
 </head>
 
 <body>
     <%- include('./Partials/nav') %>
     <form action="/blog" method="post" enctype="multipart/form-data">
-        <div class="mb-3">
+        <div class="mb-4">
             <label for="coverImage" class="form-label">Cover Image</label>
             <input type="file" class="form-control" id="coverImage"
                 name="coverImage" aria-describedby="coverImage">
 
         </div>
         <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
+            <label for="title" class="form-label" >Title</label>
             <input type="text" class="form-control" id="title" name="title"
                 aria-describedby="title">
 
@@ -25,8 +25,8 @@
         <div class="mb-3">
             <label for="floatingTextarea">Body</label>
 
-            <label for="body" class="form-label">body</label>
-            <textarea name="body" class="form-control" id="body">
+            <label for="body" class="form-label"></label>
+            <textarea name="body" class="form-control" id="body" width="80px">
 
             </textarea>
         </div>
